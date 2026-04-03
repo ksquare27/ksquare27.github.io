@@ -1,29 +1,51 @@
-<section id="prayers">
-  <h2>Catholic Prayers</h2>
-  <div class="prayer">
-    <h3>Our Father</h3>
-    <p>Our Father, who art in heaven...</p>
-  </div>
-  <!-- add more prayers -->
-</section>
-<section id="daily‑readings">
-  <h2>Daily Readings (English + Latin)</h2>
-  <div class="reading‑block">
-    <h3 id="reading‑name"></h3>
-    <div class="bilingual">
-      <div class="english"><h4>English</h4><p id="engText"></p></div>
-      <div class="latin"><h4>Latin</h4><p id="latText"></p></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catholic Daily Liturgy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Catholic Daily Liturgy</h1>
+      <nav>
+        <a href="#daily-readings">Readings</a>
+        <a href="#prayers">Prayers</a>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
 
-<section id="daily‑readings‑fr‑lat">
-  <h2>Lectures quotidiennes (Français + Latin)</h2>
-  <div class="reading‑block">
-    <h3 id="reading‑name‑fr"></h3>
-    <div class="bilingual">
-      <div class="french"><h4>Français</h4><p id="frText"></p></div>
-      <div class="latin2"><h4>Latin</h4><p id="latText2"></p></div>
+  <section id="daily-readings" class="liturgy">
+    <div class="container">
+      <h2>Today's Readings</h2>
+      <p>Liturgical Color: <span id="liturgicalColor"></span></p>
+
+      <div id="readingsList"></div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section id="prayers">
+    <div class="container">
+      <h2>Catholic Prayers</h2>
+      <div class="prayer">
+        <h3>Our Father / Pater Noster</h3>
+        <div class="bilingual">
+          <div class="english"><p>Our Father, who art in heaven, hallowed be thy name...</p></div>
+          <div class="latin"><p>Pater noster, qui es in caelis, sanctificetur nomen tuum...</p></div>
+        </div>
+      </div>
+      <div class="prayer">
+        <h3>Hail Mary / Ave Maria</h3>
+        <div class="bilingual">
+          <div class="english"><p>Hail Mary, full of grace, the Lord is with thee...</p></div>
+          <div class="latin"><p>Ave Maria, gratia plena, Dominus tecum...</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
